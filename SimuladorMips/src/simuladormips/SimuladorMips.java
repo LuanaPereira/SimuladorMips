@@ -21,6 +21,9 @@ public class SimuladorMips {
     public static void main(String[] args) {
         
         TelaSimulador tela = new TelaSimulador();
+        CPU cpu = new CPU();
+        Thread busca = new Thread(cpu);
+        
         tela.setVisible(true);
         
         while (true) {

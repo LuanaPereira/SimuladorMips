@@ -11,7 +11,7 @@ import tela.TelaSimulador;
  *
  * @author Luana
  */
-public class CPU{
+public class CPU implements Runnable{
    public static int contador = -1;
 
     public int getContador() {
@@ -186,5 +186,8 @@ public class CPU{
         return decodificacao;
     }
 
-   
+    @Override
+    public void run() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
